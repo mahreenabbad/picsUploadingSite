@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs %>
+
+<div class="w-full bg-center bg-cover h-screen 
+bg-zinc-300 flex items-center justify-center ">
+  <div class="w-[25vw]  bg-zinc-100 px-4 py-10 rounded-[30px]">
+    <h1 class="text-4xl text-center mb-10 text-zinc-700 font-semibold tracking-tighter capitalize leading-none">Create new Account</h1>
+    <form action="/register" method="post">
+      <input class="block w-full border-2 rounded-md mt-2 px-3 py-2" type="text" name="username" placeholder="username">
+      <input class="block w-full border-2 rounded-md mt-2 px-3 py-2" type="text" name="name" placeholder="Full name">
+      <input class="block w-full border-2 rounded-md mt-2 px-3 py-2" type="email" name="email" placeholder="email">
+      <input class="block w-full border-2 rounded-md mt-2 px-3 py-2" type="number" name="contact" placeholder="contact">
+      <input class="block w-full border-2 rounded-md mt-2 px-3 py-2"type="text" name="password" placeholder="password">
+      <input class="block w-full border-2  mt-5 px-3 py-2 bg-red-600 hover:bg-red-700 rounded-full text-white"type="submit" value="Create New Account">
+    
+    </form>
+    <a href="/" class="inline-block mt-7 text-sm font-semibold text-zinc-700 text-center w-full">Already have an Account</a>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>

@@ -1,0 +1,33 @@
+<% include ./partials/header.ejs %>
+
+<div class="w-full bg-center bg-cover h-screen 
+bg-[url(https://plus.unsplash.com/premium_photo-1671308540287-3f59130cfa31?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] flex items-center justify-center ">
+  <div class="w-[25vw]  bg-zinc-100 px-4 py-10 rounded-[30px]">
+    <h1 class="text-4xl text-center text-zinc-700 font-semibold tracking-tighter capitalize leading-none">Welcome to Pinterest</h1>
+    <form action="/login" method="post">
+      <input class="block w-full border-2 rounded-md mt-2 px-3 py-2" type="text" name="username" placeholder="username">
+      <input class="block w-full border-2 rounded-md mt-2 px-3 py-2"type="text" name="password" placeholder="password">
+      <input class="block w-full border-2  mt-2 px-3 py-2 bg-red-600 hover:bg-red-700 rounded-full text-white"type="submit" value="Login">
+      <a href="mt-2 font-semibold inline-block ">Forgot password ?</a>
+    </form>
+    <a href="/register" class="inline-block mt-7 text-sm font-semibold text-zinc-700 text-center w-full">Don't have an account</a>
+
+    <p class="or">OR</p>
+    <button class="btn fbk">
+      <i
+        class="ri-facebook-fill"
+        style="color:rgb(56, 128, 187); padding-right: 10px"
+      ></i
+      ><a href="/auth/facebook">Continue with Facebook</a></button
+    ><br />
+    <button class="btn ggl">
+      <i
+        class="ri-google-fill"
+        style="color: rgb(241, 111, 11); padding-right: 10px"
+      ></i
+      ><a href="#">Continue with Google</a>
+    </button>
+  </div>
+  
+</div>
+<% include ./partials/footer.ejs %>
